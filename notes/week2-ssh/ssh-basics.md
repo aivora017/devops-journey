@@ -7,8 +7,9 @@ SSH (secure shell) allows logging into a remote Linux server securely.
 
 Example :
 
-'''bash
-ssh  user@server-ip
+```bash
+ssh user@server-ip
+```
 
 ### Bandit Practice Connection
 

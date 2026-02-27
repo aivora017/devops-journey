@@ -1,57 +1,99 @@
-# DevOps Journey
+# 🚀 DevOps Journey
 
-Welcome to the DevOps Journey repository! This repository serves as a comprehensive learning and documentation hub for all things related to DevOps. Whether you're a beginner looking to understand the basics or a seasoned professional seeking to enhance your skill set, you'll find valuable resources here.
+A hands-on learning and documentation repository tracking my progression from DevOps fundamentals through real-world cloud deployments. This repo captures practical notes, lab exercises, and project documentation built while working toward a career in DevOps engineering.
 
-## Table of Contents
-- [Introduction](#introduction)
-- [What is DevOps?](#what-is-devops)
-- [Learning Resources](#learning-resources)
-- [Tools and Technologies](#tools-and-technologies)
-- [Best Practices](#best-practices)
-- [Contributing](#contributing)
-- [License](#license)
-
-## Introduction
-DevOps is a set of practices that combine software development (Dev) and IT operations (Ops), with the aim to shorten the systems development life cycle. It emphasizes collaboration, automation, and continuous integration/continuous deployment (CI/CD).
-
-## What is DevOps?
-DevOps is primarily about improving collaboration between development and operations teams, automating operations processes, and ensuring high-quality software delivery.
-
-### Key Principles
-- **Collaboration:** Foster a culture where development and operations teams work together.
-- **Automation:** Automate every part of the development and release process to reduce manual effort.
-- **Monitoring and Logging:** Implement logging and monitoring to enrich communication and improve feedback loops.
-
-## Learning Resources
-Here are some recommended resources to start your DevOps journey:
-- **Books:**
-  - "The Phoenix Project" by Gene Kim
-  - "Accelerate" by Nicole Forsgren
-- **Online Courses:**
-  - Coursera: [DevOps Specialization](https://www.coursera.org/specializations/devops)
-  - Udacity: [Cloud DevOps Engineer Nanodegree](https://www.udacity.com/course/cloud-devops-nanodegree--nd9991)
-- **Websites:**
-  - [DevOps.com](https://devops.com)
-  - [The Agile Admin](https://www.agileadmin.com)
-
-## Tools and Technologies
-In the realm of DevOps, various tools are pivotal for successful implementation:
-- **Version Control:** Git, GitHub, GitLab
-- **CI/CD Tools:** Jenkins, GitHub Actions, CircleCI
-- **Monitoring Tools:** Prometheus, Grafana, ELK Stack
-- **Containerization:** Docker, Kubernetes
-
-## Best Practices
-- **CI/CD Pipeline:** Implement a robust CI/CD pipeline for streamlined development.
-- **Infrastructure as Code (IaC):** Use IaC tools like Terraform or Ansible for effective resource management.
-- **Configuration Management:** Automate configuration with tools like Puppet or Chef.
-
-## Contributing
-Contributions are welcome! If you have suggestions for improvements or educational content, feel free to fork the repository and create a pull request. Please ensure to follow the coding styles and guidelines laid out in the contributing documentation.
-
-## License
-This repository is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
+## 📋 Table of Contents
+- [About](#about)
+- [Skills & Technologies](#skills--technologies)
+- [Projects](#projects)
+- [Learning Notes](#learning-notes)
+- [Repository Structure](#repository-structure)
 
 ---
 
-Feel free to explore, learn, and contribute to the "DevOps Journey!"
+## About
+
+This repository documents my self-driven DevOps learning journey — from Linux fundamentals and networking basics through deploying a live 2-tier LAMP application on AWS. Each folder represents a topic area with notes and practical exercises.
+
+---
+
+## Skills & Technologies
+
+| Category | Technologies |
+|----------|-------------|
+| **Cloud** | AWS (EC2, Security Groups, IAM) |
+| **Linux** | Bash, file permissions, process management, SSH |
+| **Networking** | TCP/IP, DNS, HTTP/HTTPS, SSL/TLS |
+| **Web Servers** | Apache (httpd), Nginx basics |
+| **Databases** | MariaDB / MySQL |
+| **Languages** | Python, Node.js, Java basics |
+| **Version Control** | Git, GitHub |
+| **Containers** | Docker (in progress) |
+| **CI/CD** | Jenkins, GitHub Actions (in progress) |
+| **IaC** | Terraform (in progress) |
+| **Architecture** | 12-Factor App methodology, 2-tier architecture |
+
+---
+
+## Projects
+
+### 🌐 2-Tier LAMP Stack on AWS
+> Deployed a production-style e-commerce web application on AWS EC2
+
+- **Stack:** Apache + PHP (web tier) + MariaDB (database tier) on Amazon Linux 2023
+- **Cloud:** AWS EC2 (t3.micro), Security Groups, SSH key-based access
+- **Highlights:** Database hardening (not publicly exposed), service management with `systemctl`, live browser-verified deployment
+- 📄 [View Deployment Documentation](devops_prerequisites/2_tier_application/lamp-aws-deployment/README.md)
+
+---
+
+## Learning Notes
+
+| Topic | Description |
+|-------|-------------|
+| [DevOps Fundamentals](fundamentals_of_devops/fundamentals_of_devops.md) | Core DevOps concepts, culture, and practices |
+| [Linux Basics](devops_prerequisites/Linux/Linux.md) | File system, commands, permissions, shell scripting |
+| [Linux Advanced](devops_prerequisites/Linux/Linux2.md) | Process management, networking commands, advanced shell |
+| [Networking](devops_prerequisites/Networking_basics/Networking.md) | TCP/IP, DNS, OSI model, ports and protocols |
+| [Web Servers](devops_prerequisites/Webserver/webserver_baics.md) | Apache, Nginx configuration and management |
+| [Databases](devops_prerequisites/Databases/databases_basics.md) | MySQL/MariaDB operations and administration |
+| [SSL/TLS](devops_prerequisites/Databases/ssl_tls.md) | Certificate management and HTTPS fundamentals |
+| [Git](devops_prerequisites/GIT/git_tool.md) | Version control workflow, branching, collaboration |
+| [YAML & JSON](devops_prerequisites/yaml_json/yaml_json.md) | Configuration file formats used across DevOps tooling |
+| [Node.js](devops_prerequisites/NODEJS/nodejs.md) | JavaScript runtime fundamentals |
+| [Python](devops_prerequisites/NODEJS/Python/python.md) | Python scripting for automation |
+| [Java](devops_prerequisites/JAVA/java_basics.md) | Java basics for understanding enterprise applications |
+| [DevOps Tools Overview](devops_prerequisites/devopstools/devopstools.md) | Survey of the DevOps toolchain |
+| [12-Factor App](12Factorapp/12factorapp.md) | Cloud-native application design methodology |
+| [Week 1 - Linux](notes/week1-linux/linux-basics.md) | Hands-on Linux command practice notes |
+| [Week 2 - SSH](notes/week2-ssh/ssh-basics.md) | SSH setup and remote access fundamentals |
+
+---
+
+## Repository Structure
+
+```
+devops-journey/
+├── 12Factorapp/                    # 12-Factor App methodology notes
+├── devops_prerequisites/           # Foundation topics
+│   ├── 2_tier_application/         # LAMP stack project + AWS deployment docs
+│   ├── Databases/                  # MySQL/MariaDB & SSL/TLS
+│   ├── GIT/                        # Git version control
+│   ├── JAVA/                       # Java fundamentals
+│   ├── Linux/                      # Linux commands & administration
+│   ├── Networking_basics/          # Networking concepts
+│   ├── NODEJS/                     # Node.js & Python
+│   ├── Webserver/                  # Apache/Nginx
+│   ├── devopstools/                # DevOps tool survey
+│   └── yaml_json/                  # YAML and JSON
+├── fundamentals_of_devops/         # Core DevOps principles
+└── notes/                          # Weekly study notes
+    ├── week1-linux/
+    └── week2-ssh/
+```
+
+---
+
+## License
+
+This repository is licensed under the MIT License.
