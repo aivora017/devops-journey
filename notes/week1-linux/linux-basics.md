@@ -22,9 +22,10 @@ Change directory.
 - grep = search text
 - pipes | = connect commands
 
-## Script Exection
-''' bash
+## Script Execution
+```bash
 chmod +x file.sh
 ./file.sh
+```
 
 
